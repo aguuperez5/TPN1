@@ -4,41 +4,43 @@
 <head>
     <title>Portafolio</title>
     <link rel="stylesheet" type="text/css" href="./Estilos/estilos.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>  
-    <h1>Facundo Rodriguez</h1>
-    <h2>Desarrollador web</h2>
+<body>
+    <i class="letra"> 
+        <i class="titulo">Facundo Rodriguez Desarrollador web</i>
+        <div class="container">
+             <div><img src="./Imagenes/Hombre.png" alt="imagen" height="80px"></div>   
+             <div>Hola soy facundo y soy desarrollador web desde hace 5 años</div>    
+        </div>
+        <i class="subtitulos">Experiencia laboral</i>
+        <div class="container">
+            <div class="item">Desarrollador web durante 2 años en empresa x</div>
+            <div class="item">Desarrollador web durante 2 años en empresa y</div>
+        </div>
+        <i class="subtitulos">Proyectos</i>
+        <div class="container">
+            <div class="item">Pagina</div>
+            <div class="item">Pagina</div>
+        </div>
+        <p3>Contactos</p3>
+        <a href="https://es.linkedin.com/" target="_blank">Linkedin</a>
+        <a href="https://github.com/"target="_blank">GitHub</a> 
 
-    <p>Hola soy facundo y soy desarrollador web desde hace 5 años</p>
-    <img src="./Imagenes/Hombre.png" alt="imagen" width="200" height="200">
+        <p4>Formulario de contacto</p4>
+        <form  method="post" action="enviar.php">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
 
-    <p1>Experiencia laboral</p1>
-    <ul>
-        <li>Desarrollador web durante 1 año en empresa x</li>
-        <li>Desarrollador web durante 2 años en empresa y</li>
-    </ul>
-
-    <p2>Proyectos</p2>
-    <div class="container">
-        <div class="item">Pagina</div>
-        <div class="item">Pagina</div>
-    </div>
-    <p3>Contactos</p3>
-    <a href="https://es.linkedin.com/" target="_blank">Linkedin</a>
-    <a href="https://github.com/"target="_blank">GitHub</a> 
-
-    <p4>Formulario de contacto</p4>
-    <form  method="post" action="enviar.php">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
-        
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
-
-        <input type="submit" value="Enviar">
-    </form>
+            <input type="submit" value="Enviar">
+        </form>
+    </i> 
 </body>
 
 </html>

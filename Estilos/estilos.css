@@ -1,3 +1,28 @@
+body {
+    background-color: #d1d1e6;
+}
+.titulo {
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    background-color: #a7a7b6;
+    font-size: 30px;
+}
+.subtitulos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a7a7b6;
+    font-size: 30px;
+}
+.letra {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: normal;
+    font-size: 20px;
+}
 .container {
     display: flex;
     flex-wrap: wrap;
