@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Portafolio</title>
     <link rel="stylesheet" type="text/css" href="./Estilos/estilos.css">
@@ -10,37 +9,74 @@
 </head>
 
 <body>
-    <i class="letra"> 
-        <i class="titulo">Facundo Rodriguez Desarrollador web</i>
-        <div class="container">
-             <div><img src="./Imagenes/Hombre.png" alt="imagen" height="80px"></div>   
-             <div>Hola soy facundo y soy desarrollador web desde hace 5 años</div>    
-        </div>
-        <i class="subtitulos">Experiencia laboral</i>
-        <div class="container">
-            <div class="item">Desarrollador web durante 2 años en empresa x</div>
-            <div class="item">Desarrollador web durante 2 años en empresa y</div>
-        </div>
-        <i class="subtitulos">Proyectos</i>
-        <div class="container">
-            <div class="item">Pagina</div>
-            <div class="item">Pagina</div>
-        </div>
-        <p3>Contactos</p3>
-        <a href="https://es.linkedin.com/" target="_blank">Linkedin</a>
-        <a href="https://github.com/"target="_blank">GitHub</a> 
+    <header>
+        <h1 class="titulo">Facundo Rodriguez - Desarrollador Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                
+            </ul>
+        </nav>
+    </header>
 
-        <p4>Formulario de contacto</p4>
-        <form  method="post" action="enviar.php">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
-            
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email">
+    <main>
+        <section class="presentacion">
+            <img src="./Imagenes/Hombre.png" alt="Foto de Facundo Rodriguez" height="80">
+            <p>"Hola, soy Facundo, desarrollador web con más de 5 años de experiencia. He trabajado en una variedad de proyectos web, desde pequeños sitios personales hasta plataformas más complejas, siempre buscando ofrecer la mejor experiencia a los usuarios. Me apasiona aprender nuevas tecnologías y afrontar desafíos para crear productos eficientes y de alta calidad."</p>
+        </section>
 
-            <input type="submit" value="Enviar">
-        </form>
-    </i> 
+        <section id="habilidades">
+            <h2 class="subtitulo">Habilidades</h2>
+            <ul>
+                <li>Manejo de html y css</li>
+                <li>Manejo de JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="experiencia">
+            <h2 class="subtitulo">Experiencia Laboral</h2>
+            <ul>
+                <li>Desarrollador web</li>
+                <li>Desarrollador web</li>
+                <li>Freelancer y Consultor Independiente</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2 class="subtitulo">Proyectos</h2>
+            <ul>
+                <li>Proyecto 1</li>
+                <li>Proyecto 2</li>
+            </ul>
+        </section>
+
+        <section id="contacto"> 
+            <h2 class="subtitulo">Contacto</h2>
+            <p>
+                <a href="https://es.linkedin.com/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/" target="_blank">GitHub</a>
+            </p>
+        </section>
+        <section>
+            <h2 class="subtitulo">Formulario de Contacto</h2>
+            <form method="post" action="enviar.php">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Facundo Rodriguez</p>
+    </footer>
 </body>
 
 </html>
