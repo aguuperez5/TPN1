@@ -1,18 +1,18 @@
 body {
-    background-color: #d1d1e6;
+    background-color: #C3A995;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     margin: 0;
     padding: 0;
 }
 header {
-    background-color: #a7a7b6;
+    background-color: #AB947E;
     padding: 15px;
     text-align: center;
 }
 .titulo {
     margin: 0;
-    font-size: 24px;
+    font-size: 40px;
 }
 nav ul {
     display: flex;
@@ -23,11 +23,12 @@ nav ul {
     gap: 15px;
 }
 nav ul li {
+    background-color: #593D3B;
     display: inline;
 }
 nav a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: bold;
 }
 nav a :hover {
@@ -38,7 +39,8 @@ main {
     text-align: center;
 }
 .subtitulo {
-    background-color: #a7a7b6;
+    color: white;
+    background-color: #593D3B;
     padding: 10px;
     border-radius: 8px;
     display: inline-block;
@@ -71,14 +73,22 @@ ul {
 }
 ul li {
     flex: 1;
-    background-color: white;
+    background-color: #AB947E;
     padding: 15px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
+p a::after {
+    content: "|";
+    margin-left: 10px;
+    color: gray;
+}
+p a:last-child::after {
+    content: "";
+}
 a {
-    color: #333;
+    color: white;
     font-weight: bold;
     text-decoration: none;
 }
@@ -86,42 +96,9 @@ a :hover {
     color: #555;
     text-decoration: underline;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-form label {
-    width: 100%;
-    text-align: left;
-    font-weight: bold;
-    margin-top: 10px;
-}
-form input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-form input[type="submit"] {
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    margin-top: 15px;
-    width: 50%;
-}
-form input[type="submit"]:hover {
-    background-color: #555;
-}
 footer {
-    background-color: #a7a7b6;
+    color: white;
+    background-color: #AB947E;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
